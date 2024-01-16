@@ -61,7 +61,7 @@ if(WITH_UDP_CONNECTION)
 endif(WITH_UDP_CONNECTION)
 
 add_executable(dlt-daemon ${dlt_daemon_SRCS} ${systemd_SRCS})
-target_link_libraries(dlt-daemon ${RT_LIBRARY} ${SOCKET_LIBRARY} ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(dlt-daemon ${RT_LIBRARY} ${CMAKE_THREAD_LIBS_INIT})
 if (WITH_SYSTEMD_SOCKET_ACTIVATION)
     target_link_libraries(dlt-daemon systemd)
 endif()
@@ -85,7 +85,7 @@ if (WITH_DLT_UNIT_TESTS)
     endif(WITH_SYSTEMD_WATCHDOG OR WITH_SYSTEMD)
 
     add_library(dlt_daemon ${library_SRCS})
-    target_link_libraries(dlt_daemon ${RT_LIBRARY} ${SOCKET_LIBRARY} ${CMAKE_THREAD_LIBS_INIT})
+    target_link_libraries(dlt_daemon ${RT_LIBRARY} ${CMAKE_THREAD_LIBS_INIT})
 
     install(TARGETS dlt_daemon
             RUNTIME DESTINATION bin

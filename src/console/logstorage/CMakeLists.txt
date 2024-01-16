@@ -12,7 +12,7 @@
 #
 # For further information see http://www.covesa.org/.
 #######
-add_definitions(-Werror)
+# add_definitions(-Werror)
 
 set(dlt-logstorage-ctrl_SRCS
     dlt-logstorage-ctrl.c
