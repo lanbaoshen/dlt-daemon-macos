@@ -1,12 +1,12 @@
 # Diagnostic Log and Trace
 
-Based on [COVESA/dlt-daemon](https://github.com/COVESA/dlt-daemon), 
-it only developed and tested with **Ubuntu Linux 16 64-bit / Intel PC**.
+Derived from [COVESA/dlt-daemon](https://github.com/COVESA/dlt-daemon), 
+it's only developed and tested on **Ubuntu Linux 16 64-bit & Intel PC**.
 
-Because of my poor C/C++ coding skill and only need run it on macOS, 
-I just fix error which raised by `cmake` or `make` when execute on my macbook.   
+Because of my poor C/C++ coding skill and I only need run it on macOS, 
+I just fix error which is raised by `cmake` or `make` during deployment and execution.   
 
-## Test
+## Environment
 - Test on chip:
   - Apple Silicon
 
